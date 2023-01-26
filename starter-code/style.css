@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: 'Red Hat Display', sans-serif;
 }
 
 .container {
@@ -33,6 +34,7 @@ img {
   width: 20rem;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  color: #87879d;
 }
 
 .btn-wrapper {
@@ -101,11 +103,10 @@ img {
   color: white;
   margin-top: 1.5rem;
   font-weight: 500;
-  height: 4.8rem;
+  /* height: 4.8rem; */
   width: 20rem;
   margin-bottom: 2rem;
   margin: 0 auto;
-  border: 1px red solid;
 }
 .exp-footer button {
   background-color: #855fb1;
@@ -113,6 +114,7 @@ img {
   height: 3.6rem;
   width: 12rem;
   color: white;
+  margin-top: 2rem;
 }
 .exp-footer button span {
   color: #d9b8ff;
@@ -122,4 +124,52 @@ button {
 }
 
 @media (min-width: 768px) {
+  .btn-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .content-container {
+    padding: 0 2.5rem;
+  }
+
+  .gallery-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+  }
+  .modern-wrapper {
+    width: 35rem;
+    margin: 0 auto;
+  }
+  .modern-wrapper p {
+    margin-top: 2rem;
+  }
+  .exp-footer {
+    background-image: url('./assets/tablet/image-footer.jpg');
+    background-size: cover;
+  }
+  .exp-footer button {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .exp-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 7.25rem 10rem;
+    text-align: left;
+  }
+  .gallery-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .content-container {
+    padding: 0 10.3rem;
+  }
 }
