@@ -124,6 +124,17 @@ img {
 }
 button {
   border: none;
+  cursor: pointer;
+}
+
+.btn-purple:hover {
+  background-color: #d9b8ff;
+}
+.btn-green:hover {
+  background-color: #71c0d4;
+}
+.exp-footer button:hover {
+  background-color: #d9b8ff;
 }
 
 @media (min-width: 768px) {
